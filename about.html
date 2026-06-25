@@ -1,34 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About | Skin Restoration Aesthetics</title>
-<meta name="description" content="Learn about the Skin Restoration Aesthetics approach and client experience.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://skinrestoration.cloud/about">
-<meta property="og:title" content="About | Skin Restoration Aesthetics">
-<meta property="og:description" content="Learn about the Skin Restoration Aesthetics approach and client experience.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://skinrestoration.cloud">
-<meta property="og:image" content="https://skinrestoration.cloud/assets/img/og-image.svg">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg">
-<link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Skin Restoration Aesthetics</title>
+  <meta name="description" content="Learn about Skin Restoration Aesthetics — our approach to clinical skincare, personalized treatment philosophy, and commitment to visible, lasting results.">
+  <meta name="theme-color" content="#8a6f63">
+  <meta property="og:title" content="About | Skin Restoration Aesthetics">
+  <meta property="og:description" content="Clinical care. Elevated experience. Learn about our philosophy and approach.">
+  <meta property="og:type" content="website">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="announcement-bar">Shop launching soon — ask about products during your visit</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Skin Restoration Aesthetics logo"><span>Skin Restoration Aesthetics</span></a>
-  <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-  <nav id="siteNav"><a class="nav-link " href="index.html">Home</a><a class="nav-link " href="services.html">Services</a><a class="nav-link " href="treatments.html">Treatments</a><a class="nav-link " href="shop.html">Shop <span class="badge">Coming Soon</span></a><a class="nav-link active" href="about.html">About</a><a class="nav-link " href="contact.html">Contact</a></nav>
-</header>
-<main><section class="page-hero"><h1>About</h1><p>Clinical professionalism, thoughtful care, and a calm luxury experience.</p></section><section class="section"><div class="grid two"><article class="card"><h3>Care Philosophy</h3><p>Every treatment starts with listening, education, and realistic skin goals.</p></article><article class="card"><h3>Experience</h3><p>A refined environment designed to make skincare decisions easier and more comfortable.</p></article></div></section></main>
-<footer class="site-footer">
-  <div><strong>Skin Restoration Aesthetics</strong><p>Clinical care. Elevated experience.</p></div>
-  <div><a href="legal/privacy.html">Privacy</a> · <a href="legal/terms.html">Terms</a> · <a href="sitemap.xml">Sitemap</a></div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+<body data-page="about.html">
+  <div id="headerMount"></div>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────────── -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Our Story</p>
+        <h1>Skincare, elevated.</h1>
+        <p class="lead">Skin Restoration Aesthetics was built around one belief: every client deserves a personalized approach grounded in clinical expertise and genuine care.</p>
+      </div>
+    </section>
+
+    <!-- ── PHILOSOPHY ────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="about-hero">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-12);align-items:center;">
+            <div>
+              <p class="eyebrow">Our philosophy</p>
+              <h2 style="margin-bottom:var(--sp-5);">Clinical care.<br>Elevated experience.</h2>
+              <p class="body-text" style="margin-bottom:var(--sp-4);">We believe great skin comes from understanding your skin — not just treating symptoms. That's why every client journey begins with a thorough assessment before any recommendations are made.</p>
+              <p class="body-text" style="margin-bottom:var(--sp-4);">Our approach combines medical-grade treatments with a calm, luxury experience. No pressure. No upselling. Just honest, effective skincare designed to deliver real, visible results.</p>
+              <p class="body-text">Whether you're managing an ongoing concern or simply maintaining healthy skin, you'll always leave with a clear plan and the knowledge to support your skin at home.</p>
+            </div>
+            <div style="text-align:center;padding:var(--sp-8);">
+              <img src="logo.jpg" alt="Skin Restoration Aesthetics" style="width:min(260px,100%);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);margin-inline:auto;">
+              <p style="margin-top:var(--sp-4);font-family:var(--font-display);font-size:var(--text-lg);color:var(--text-muted);font-style:italic;">"Real results. Genuine care."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VALUES ────────────────────────────────────────────── -->
+    <section class="section" style="background:var(--surface);border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">What we stand for</p>
+          <h2>Our core values</h2>
+          <p class="lead">Every decision we make — from the products we carry to how we communicate — is shaped by these principles.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h4 style="margin-bottom:var(--sp-2);">Personalized Always</h4>
+            <p class="body-text">No two clients are the same. Every recommendation, treatment, and homecare plan is tailored to your unique skin and goals — never templated or rushed.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4 style="margin-bottom:var(--sp-2);">Clinical Integrity</h4>
+            <p class="body-text">We only recommend what we genuinely believe will benefit your skin. Every product and treatment we offer is backed by professional expertise and real results.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h4 style="margin-bottom:var(--sp-2);">Client Comfort First</h4>
+            <p class="body-text">From the moment you book to the moment you leave — and every homecare check-in in between — your comfort, clarity, and confidence are our priority.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── APPROACH ───────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Our approach</p>
+          <h2>How we're different</h2>
+        </div>
+
+        <div class="panel-grid">
+          <div class="info-panel" style="border-left:3px solid var(--primary);">
+            <h4 style="color:var(--primary);margin-bottom:var(--sp-3);">Assessment Before Action</h4>
+            <p class="body-text">We never jump straight to treatments. Every new client receives a thorough skin assessment first — so every recommendation is grounded in your actual skin, not a generic protocol.</p>
+          </div>
+
+          <div class="info-panel" style="border-left:3px solid var(--accent);">
+            <h4 style="color:var(--primary);margin-bottom:var(--sp-3);">Education, Not Upselling</h4>
+            <p class="body-text">We take time to explain what each treatment does, why we're recommending it, and what realistic results look like. Informed clients get better results — and that matters more to us than any single sale.</p>
+          </div>
+
+          <div class="info-panel" style="border-left:3px solid var(--primary);">
+            <h4 style="color:var(--primary);margin-bottom:var(--sp-3);">In-Clinic + At-Home</h4>
+            <p class="body-text">Professional treatments are just part of the picture. We curate professional homecare products and routines that extend and amplify your in-clinic results — making every dollar of your investment work harder.</p>
+          </div>
+
+          <div class="info-panel" style="border-left:3px solid var(--accent);">
+            <h4 style="color:var(--primary);margin-bottom:var(--sp-3);">Long-Term Skin Health</h4>
+            <p class="body-text">We're not focused on quick fixes. Our goal is to help you build genuinely healthy, resilient skin that looks and feels better with every season — backed by a care plan that evolves as your skin does.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────────────────────── -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-strip">
+          <p class="eyebrow" style="color:rgba(255,255,255,0.7)">Ready to meet us?</p>
+          <h2>Start with a consultation</h2>
+          <p>We'd love to learn about your skin and show you what's possible with the right approach.</p>
+          <div class="btn-row" style="justify-content:center;">
+            <a class="btn btn-primary" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Book a Consultation</a>
+            <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="cartMount"></div>
+  <script src="data.js"></script>
+  <script src="utils.js"></script>
+  <script src="checkout.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

@@ -1,38 +1,490 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skin Restoration Aesthetics | Clinical Skincare & Aesthetic Treatments</title>
-<meta name="description" content="Premium aesthetics clinic website for skincare treatments, consultations, and coming-soon product support.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://skinrestoration.cloud/">
-<meta property="og:title" content="Skin Restoration Aesthetics | Clinical Skincare & Aesthetic Treatments">
-<meta property="og:description" content="Premium aesthetics clinic website for skincare treatments, consultations, and coming-soon product support.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://skinrestoration.cloud">
-<meta property="og:image" content="https://skinrestoration.cloud/assets/img/og-image.svg">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg">
-<link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Restoration Aesthetics | Luxury Skincare & Treatments</title>
+  <meta name="description" content="Skin Restoration Aesthetics offers luxury, results-driven skincare treatments and curated professional homecare. Book your personalized consultation today.">
+  <meta name="theme-color" content="#2c1a14">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Skin Restoration Aesthetics | Luxury Skincare">
+  <meta property="og:description" content="Luxury skincare treatments and curated homecare. Clinical care. Elevated experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="android-chrome-512x512.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="announcement-bar">Shop launching soon — ask about products during your visit</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Skin Restoration Aesthetics logo"><span>Skin Restoration Aesthetics</span></a>
-  <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-  <nav id="siteNav"><a class="nav-link active" href="index.html">Home</a><a class="nav-link " href="services.html">Services</a><a class="nav-link " href="treatments.html">Treatments</a><a class="nav-link " href="shop.html">Shop <span class="badge">Coming Soon</span></a><a class="nav-link " href="about.html">About</a><a class="nav-link " href="contact.html">Contact</a></nav>
-</header>
-<main>
-<section class="hero"><div class="hero-copy"><p class="eyebrow">Clinical skincare • elevated experience</p><h1>Advanced Aesthetics. Restored Confidence.</h1><p>Premium skin treatments, thoughtful consultation, and a calm patient-first experience for healthy, radiant skin.</p><div class="actions"><a class="btn" href="contact.html">Book Consultation</a><a class="btn outline" href="treatments.html">Explore Treatments</a></div></div><div class="hero-panel"><img src="assets/img/hero-skin.svg" alt="Abstract skincare illustration"><div class="mini-grid"><span>Personalized</span><span>Clinical</span><span>Elevated</span><span>Results-focused</span></div></div></section>
-<section class="section"><h2>Focused care paths</h2><div class="grid three"><article class="card"><h3>Acne & Clarity</h3><p>Support for blemish-prone skin, congestion, and maintenance routines.</p></article><article class="card"><h3>Brightening & Tone</h3><p>Treatment pathways for dullness, texture, and uneven-looking tone.</p></article><article class="card"><h3>Healthy Aging</h3><p>Skin support focused on hydration, resilience, and smoothness.</p></article></div></section>
-<section class="section split"><div><h2>Shop is launching soon</h2><p>Product purchasing is disabled for now. Clients can ask about recommended products during visits.</p></div><a class="btn" href="shop.html">View Coming Soon Page</a></section>
-</main>
-<footer class="site-footer">
-  <div><strong>Skin Restoration Aesthetics</strong><p>Clinical care. Elevated experience.</p></div>
-  <div><a href="legal/privacy.html">Privacy</a> · <a href="legal/terms.html">Terms</a> · <a href="sitemap.xml">Sitemap</a></div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+<body data-page="index.html">
+  <div id="headerMount"></div>
+
+  <main>
+
+    <!-- ── CINEMATIC HERO ──────────────────────────────────── -->
+    <section class="hero-cinematic" aria-label="Hero">
+      <div class="hero-cin-bg">
+        <img src="hero-bg.jpg" alt="" aria-hidden="true" fetchpriority="high">
+        <div class="hero-cin-overlay"></div>
+      </div>
+
+      <div class="container hero-cin-inner">
+        <!-- Left: copy -->
+        <div class="hero-cin-copy">
+          <div class="hero-location-badge">
+            <span class="hero-location-dot"></span>
+            San Jose, California · Est. 2024
+          </div>
+
+          <h1 class="hero-cin-h1">
+            Reveal Your<br>
+            Best Skin.<br>
+            <em>Restored &amp;<br>Radiant.</em>
+          </h1>
+
+          <p class="hero-cin-lead">Advanced facials, microneedling, and customized skincare plans to support smoother, brighter, healthier-looking skin.</p>
+
+          <div class="hero-cin-btns">
+            <a class="btn-cin-primary" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Book Consultation</a>
+            <a class="btn-cin-ghost" href="services.html">View Services</a>
+          </div>
+
+          <p class="hero-cin-scroll">
+            <span class="hero-cin-scroll-line"></span>
+            Scroll to explore
+          </p>
+        </div>
+
+        <!-- Right: floating badges -->
+        <div class="hero-cin-badges" aria-hidden="true">
+          <div class="hero-float-badge">
+            <span class="hero-float-label">5★</span>
+            <span class="hero-float-sub">Client Care</span>
+          </div>
+          <div class="hero-float-badge">
+            <span class="hero-float-label">Custom</span>
+            <span class="hero-float-sub">Treatment Plans</span>
+          </div>
+          <div class="hero-float-badge">
+            <span class="hero-float-label">Curated</span>
+            <span class="hero-float-sub">Skincare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TICKER MARQUEE ─────────────────────────────────── -->
+    <div class="ticker-bar" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack">
+        <span>Chemical Peels</span><span class="ticker-dot">·</span>
+        <span>Microneedling</span><span class="ticker-dot">·</span>
+        <span>Anti-Aging Protocols</span><span class="ticker-dot">·</span>
+        <span>Skin Brightening</span><span class="ticker-dot">·</span>
+        <span>Hydration Therapy</span><span class="ticker-dot">·</span>
+        <span>Acne Solutions</span><span class="ticker-dot">·</span>
+        <span>Custom Facials</span><span class="ticker-dot">·</span>
+        <span>LED Light Therapy</span><span class="ticker-dot">·</span>
+      </div>
+    </div>
+    <script>
+      /* Ticker: clone inner content once so translateX(-50%) is exact */
+      (function() {
+        var t = document.getElementById('tickerTrack');
+        if (!t) return;
+        t.innerHTML += t.innerHTML;
+      })();
+    </script>
+
+    <!-- ── STATS DARK BAR ─────────────────────────────────── -->
+    <section class="stats-dark-bar">
+      <div class="container stats-dark-inner">
+        <div class="stat-dark-item">
+          <span class="stat-dark-num">299</span>
+          <span class="stat-dark-label">Happy Clients</span>
+        </div>
+        <div class="stat-dark-divider"></div>
+        <div class="stat-dark-item">
+          <span class="stat-dark-num">4</span>
+          <span class="stat-dark-label">Signature Treatments</span>
+        </div>
+        <div class="stat-dark-divider"></div>
+        <div class="stat-dark-item">
+          <span class="stat-dark-num">100%</span>
+          <span class="stat-dark-label">Personalized Protocols</span>
+        </div>
+        <div class="stat-dark-divider"></div>
+        <div class="stat-dark-item">
+          <span class="stat-dark-num">111</span>
+          <span class="stat-dark-label">Curated Products</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES WITH PHOTO CARDS ─────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">What We Offer</p>
+          <h2>Treatments Tailored to<br><em>Your Skin Goals</em></h2>
+          <p class="lead">Each service is customized to your skin's unique needs — never one-size-fits-all.</p>
+        </div>
+
+        <div class="photo-service-grid">
+          <article class="photo-service-card reveal-card">
+            <div class="photo-service-img">
+              <img src="service-microneedling.jpg" alt="Microneedling treatment" loading="lazy">
+              <span class="photo-service-tag">Resurfacing</span>
+            </div>
+            <div class="photo-service-body">
+              <h3>Microneedling</h3>
+              <p>Activate your skin's natural renewal. Smoother texture, firmer skin, more even complexion.</p>
+              <div class="photo-service-footer">
+                <span class="photo-service-price">From $145</span>
+                <a class="photo-service-link" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener">Book Now →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo-service-card reveal-card">
+            <div class="photo-service-img">
+              <img src="service-peel.jpg" alt="Chemical peel treatment" loading="lazy">
+              <span class="photo-service-tag">Resurfacing</span>
+            </div>
+            <div class="photo-service-body">
+              <h3>Chemical Peel</h3>
+              <p>Reveal brighter, clearer skin. Customized peel selected for your type — tone, texture, clarity.</p>
+              <div class="photo-service-footer">
+                <span class="photo-service-price">From $120</span>
+                <a class="photo-service-link" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener">Book Now →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo-service-card reveal-card">
+            <div class="photo-service-img">
+              <img src="service-facial.jpg" alt="Custom facial treatment" loading="lazy">
+              <span class="photo-service-tag">Facial</span>
+            </div>
+            <div class="photo-service-body">
+              <h3>Custom Facial</h3>
+              <p>A fully personalized facial adjusted to your skin that day — cleansing, exfoliation, nourishment.</p>
+              <div class="photo-service-footer">
+                <span class="photo-service-price">From $95</span>
+                <a class="photo-service-link" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener">Book Now →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo-service-card reveal-card">
+            <div class="photo-service-img">
+              <img src="service-acne.jpg" alt="Acne treatment" loading="lazy">
+              <span class="photo-service-tag">Acne</span>
+            </div>
+            <div class="photo-service-body">
+              <h3>Acne Treatment</h3>
+              <p>A guided professional approach. Treat congestion, calm inflammation, and build a long-term plan.</p>
+              <div class="photo-service-footer">
+                <span class="photo-service-price">From $135</span>
+                <a class="photo-service-link" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener">Book Now →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn-row" style="justify-content:center;margin-top:var(--sp-10);">
+          <a class="btn btn-primary btn-lg" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">View All &amp; Book Now</a>
+          <a class="btn btn-secondary" href="services.html">All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REAL RESULTS GALLERY ──────────────────────────── -->
+    <section class="real-results-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Real Client Results</p>
+          <h2>See the <em>Transformation</em></h2>
+          <p class="lead">Real progress from a customized treatment plan — dedication, patience, and professional care working together.</p>
+        </div>
+
+        <div class="results-gallery">
+          <div class="results-card">
+            <div class="results-img-wrap">
+              <img src="result-before.jpg" alt="Client skin before acne treatment — moderate to severe acne" loading="lazy">
+            </div>
+            <div class="results-label results-label--before">Before</div>
+          </div>
+          <div class="results-arrow" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+          <div class="results-card">
+            <div class="results-img-wrap">
+              <img src="result-after.jpg" alt="Client skin after acne treatment — significantly cleared" loading="lazy">
+            </div>
+            <div class="results-label results-label--after">After</div>
+          </div>
+        </div>
+
+        <p class="results-caption">Acne Transformation — Customized treatment plan with professional-grade products and consistent care.</p>
+
+        <div class="btn-row" style="justify-content:center;margin-top:var(--sp-6);">
+          <a class="btn btn-primary" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Start Your Transformation</a>
+          <a class="btn btn-secondary" href="https://www.instagram.com/skinrestorationaesthetics" target="_blank" rel="noopener noreferrer">See More on Instagram →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT / PHILOSOPHY ────────────────────────────── -->
+    <section class="section about-split-section">
+      <div class="container about-split-grid">
+        <div class="about-split-photo reveal-card">
+          <img src="about-portrait.jpg" alt="Skin Restoration Aesthetics team" loading="lazy">
+          <div class="about-photo-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2-3.09 6.26L2 9.27l5 4.87-1.18 6.88L12 17.77l6.18 3.25L17 14.14l5-4.87-6.91-1.01L12 2z"/></svg>
+            5★ Rated Studio
+          </div>
+        </div>
+        <div class="about-split-copy">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2>Where Science Meets<br><em>Skincare</em></h2>
+          <p class="lead">Skin Restoration Aesthetics blends clinical expertise with genuine care. Every appointment is personalized so your skin goals stay at the center of your treatment — from the first consultation forward.</p>
+          <ul class="about-pillars">
+            <li>
+              <span class="about-pillar-icon">✓</span>
+              <div>
+                <strong>Customized Care</strong>
+                <span>Recommendations based on your unique skin condition and goals</span>
+              </div>
+            </li>
+            <li>
+              <span class="about-pillar-icon">→</span>
+              <div>
+                <strong>Simple Next Steps</strong>
+                <span>Clear homecare guidance you can actually follow</span>
+              </div>
+            </li>
+            <li>
+              <span class="about-pillar-icon">★</span>
+              <div>
+                <strong>Premium Products</strong>
+                <span>Professional-grade formulations curated for real results</span>
+              </div>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="about.html">Begin Your Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURED PRODUCTS ─────────────────────────────── -->
+    <section class="section" style="background:var(--bg-alt);border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Curated Skincare</p>
+          <h2>Support Your Results <em>at Home</em></h2>
+          <p class="lead">Professional-grade products chosen by our estheticians to extend your results between visits.</p>
+        </div>
+
+        <div class="featured-products-grid" id="featuredProducts"></div>
+
+        <div class="btn-row" style="justify-content:center;margin-top:var(--sp-8);">
+          <a class="btn btn-primary btn-lg" href="shop.html">Shop All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ──────────────────────────────────── -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Client Love</p>
+          <h2>Why Clients <em>Keep Coming Back</em></h2>
+        </div>
+
+        <div class="testimonials-carousel" id="testimonialsCarousel">
+          <div class="testimonial-card-v2 active">
+            <div class="tc-quote">❝</div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"I've been seeing Linda for over two years now, and I honestly can't imagine trusting anyone else with my skin. Every visit is personalized and the results speak for themselves."</p>
+            <div class="testimonial-author">
+              <div class="author-initial" aria-hidden="true">A</div>
+              <div>
+                <div class="author-name">Adriana M.</div>
+                <div class="author-title">Verified Yelp review · San Jose, CA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card-v2">
+            <div class="tc-quote">❝</div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"I started coming here years ago for acne treatments, back when they were called Acneology. The expertise and care has only gotten better. I highly recommend following their skincare regimens."</p>
+            <div class="testimonial-author">
+              <div class="author-initial" aria-hidden="true">J</div>
+              <div>
+                <div class="author-name">Jennifer L.</div>
+                <div class="author-title">Verified Yelp review · San Jose, CA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card-v2">
+            <div class="tc-quote">❝</div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"They know what's best for your skin condition. I highly recommend following their skincare regimens — my skin has never looked or felt better since starting here."</p>
+            <div class="testimonial-author">
+              <div class="author-initial" aria-hidden="true">S</div>
+              <div>
+                <div class="author-name">Sara K.</div>
+                <div class="author-title">Verified Yelp review · Santa Clara, CA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-controls">
+          <button class="tc-arrow" id="tcPrev" aria-label="Previous testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="tc-dots">
+            <button class="tc-dot active" data-idx="0"></button>
+            <button class="tc-dot" data-idx="1"></button>
+            <button class="tc-dot" data-idx="2"></button>
+          </div>
+          <button class="tc-arrow" id="tcNext" aria-label="Next testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DARK CTA ───────────────────────────────────────── -->
+    <section class="dark-cta-section">
+      <div class="container dark-cta-inner">
+        <p class="eyebrow" style="color:var(--accent)">Ready to Begin?</p>
+        <h2>Ready to <em>Transform</em><br>Your Skin?</h2>
+        <p class="dark-cta-sub">Start with a consultation built around your skin concerns, goals, and lifestyle.</p>
+        <div class="dark-cta-btns">
+          <a class="btn-cin-primary" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Book Consultation</a>
+          <a class="btn-cin-ghost" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="cartMount"></div>
+
+  <!-- Persistent booking bar -->
+  <div class="booking-bar" id="bookingBar">
+    <span class="booking-bar-dot"></span>
+    <span class="booking-bar-text">Ready to glow? Appointments available this week in San Jose.</span>
+    <a class="booking-bar-btn" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Book Now</a>
+    <button class="booking-bar-close" onclick="document.getElementById('bookingBar').style.display='none'" aria-label="Dismiss">×</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="utils.js"></script>
+  <script src="checkout.js"></script>
+  <script>
+    /* ── Testimonial Carousel ───────────────────────────── */
+    (function() {
+      const cards = document.querySelectorAll('.testimonial-card-v2');
+      const dots = document.querySelectorAll('.tc-dot');
+      let current = 0;
+
+      function show(idx) {
+        cards.forEach((c, i) => c.classList.toggle('active', i === idx));
+        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        current = idx;
+      }
+
+      document.getElementById('tcNext')?.addEventListener('click', () => show((current + 1) % cards.length));
+      document.getElementById('tcPrev')?.addEventListener('click', () => show((current - 1 + cards.length) % cards.length));
+      dots.forEach(d => d.addEventListener('click', () => show(+d.dataset.idx)));
+
+      // Auto-advance every 5s
+      setInterval(() => show((current + 1) % cards.length), 5000);
+    })();
+
+    /* ── Scroll reveal ──────────────────────────────────── */
+    (function() {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal-card').forEach(el => obs.observe(el));
+    })();
+  </script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

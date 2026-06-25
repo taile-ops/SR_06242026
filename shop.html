@@ -1,34 +1,375 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop Coming Soon | Skin Restoration Aesthetics</title>
-<meta name="description" content="Shop page is under construction and launching soon.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://skinrestoration.cloud/shop">
-<meta property="og:title" content="Shop Coming Soon | Skin Restoration Aesthetics">
-<meta property="og:description" content="Shop page is under construction and launching soon.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://skinrestoration.cloud">
-<meta property="og:image" content="https://skinrestoration.cloud/assets/img/og-image.svg">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg">
-<link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Skin Restoration Aesthetics</title>
+  <meta name="description" content="Shop professional skincare at Skin Restoration Aesthetics — curated cleansers, serums, moisturizers, and more from trusted medical-grade brands.">
+  <meta name="theme-color" content="#8a6f63">
+  <meta property="og:title" content="Shop | Skin Restoration Aesthetics">
+  <meta property="og:description" content="Curated professional skincare products. Add to cart and checkout securely.">
+  <meta property="og:type" content="website">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Shop-specific extras */
+    .shop-sticky-bar {
+      position: sticky;
+      top: 74px;
+      z-index: 50;
+      background: rgba(247,242,238,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding-block: var(--sp-4);
+    }
+    .shop-sticky-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-4);
+      flex-wrap: wrap;
+    }
+    .shop-filters-row {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .input-search {
+      height: 44px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--card);
+      padding: 0 var(--sp-5) 0 var(--sp-10);
+      font-size: var(--text-sm);
+      color: var(--text);
+      outline: none;
+      min-width: 220px;
+      transition: border-color var(--ease), box-shadow var(--ease);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239d8880' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: var(--sp-4) center;
+      background-size: 15px;
+    }
+    .input-search:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(138,111,99,0.12);
+    }
+    .select-cat {
+      height: 44px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--card);
+      padding: 0 var(--sp-5);
+      font-size: var(--text-sm);
+      color: var(--text);
+      outline: none;
+      cursor: pointer;
+      transition: border-color var(--ease), box-shadow var(--ease);
+      appearance: none;
+      padding-right: var(--sp-8);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239d8880' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right var(--sp-4) center;
+    }
+    .select-cat:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(138,111,99,0.12);
+    }
+    .shop-count-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--text-faint);
+      white-space: nowrap;
+    }
+    .view-cart-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-2);
+      height: 44px;
+      padding: 0 var(--sp-5);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      background: var(--card);
+      color: var(--text);
+      border: 1.5px solid var(--border);
+      transition: background var(--ease), border-color var(--ease), box-shadow var(--ease);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .view-cart-btn:hover {
+      background: var(--bg-alt);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .view-cart-btn .cart-count-chip {
+      background: var(--primary);
+      color: #fff;
+      border-radius: var(--radius-full);
+      min-width: 22px;
+      height: 22px;
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px;
+    }
+
+
+    /* Coming soon animation */
+    .coming-soon-wrap {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(247,242,238,0.96), rgba(255,255,255,0.9));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 5vw, 4rem);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      min-height: 460px;
+      display: grid;
+      place-items: center;
+    }
+    .beauty-bubble {
+      position: absolute;
+      border-radius: 999px;
+      background: rgba(188,167,155,0.22);
+      animation: bubbleFloat 7s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .beauty-bubble:nth-child(1) { width: 76px; height: 76px; left: 8%; top: 18%; animation-delay: 0s; }
+    .beauty-bubble:nth-child(2) { width: 44px; height: 44px; right: 12%; top: 16%; animation-delay: 1.4s; }
+    .beauty-bubble:nth-child(3) { width: 58px; height: 58px; left: 17%; bottom: 18%; animation-delay: 2.2s; }
+    .beauty-bubble:nth-child(4) { width: 94px; height: 94px; right: 8%; bottom: 12%; animation-delay: 3s; }
+    .spa-character {
+      width: min(260px, 76vw);
+      margin: 0 auto var(--sp-6);
+      animation: gentleBounce 3.4s ease-in-out infinite;
+    }
+    .spa-face { animation: faceGlow 2.6s ease-in-out infinite; transform-origin: center; }
+    .spa-cucumber-left, .spa-cucumber-right { animation: cucumberWiggle 2.2s ease-in-out infinite; transform-origin: center; }
+    .spa-sparkle { animation: sparkleBlink 1.8s ease-in-out infinite; transform-origin: center; }
+    .spa-sparkle:nth-of-type(2) { animation-delay: .4s; }
+    .spa-sparkle:nth-of-type(3) { animation-delay: .8s; }
+    .coming-soon-card {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+    }
+    .coming-soon-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-2);
+      border-radius: var(--radius-full);
+      background: rgba(138,111,99,0.1);
+      border: 1px solid rgba(138,111,99,0.18);
+      padding: .5rem 1rem;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: var(--sp-4);
+    }
+    .coming-soon-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 8vw, 5.4rem);
+      line-height: .95;
+      color: var(--text);
+      margin-bottom: var(--sp-4);
+    }
+    .coming-soon-copy {
+      color: var(--text-muted);
+      font-size: var(--text-lg);
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 0 auto var(--sp-6);
+    }
+    .coming-soon-joke {
+      display: inline-block;
+      color: var(--text-faint);
+      font-size: var(--text-sm);
+      background: var(--card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-4) var(--sp-5);
+    }
+    @keyframes gentleBounce {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    @keyframes bubbleFloat {
+      0%, 100% { transform: translateY(0) scale(1); opacity: .72; }
+      50% { transform: translateY(-22px) scale(1.08); opacity: .38; }
+    }
+    @keyframes faceGlow {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(188,167,155,0)); }
+      50% { transform: scale(1.015); filter: drop-shadow(0 10px 16px rgba(188,167,155,.25)); }
+    }
+    @keyframes cucumberWiggle {
+      0%, 100% { transform: rotate(0); }
+      50% { transform: rotate(5deg); }
+    }
+    @keyframes sparkleBlink {
+      0%, 100% { opacity: .35; transform: scale(.85); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+    @media (max-width: 760px) {
+      .coming-soon-wrap { min-height: 420px; }
+      .coming-soon-copy { font-size: var(--text-base); }
+    }
+  </style>
 </head>
-<body>
-<div class="announcement-bar">Shop launching soon — ask about products during your visit</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Skin Restoration Aesthetics logo"><span>Skin Restoration Aesthetics</span></a>
-  <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-  <nav id="siteNav"><a class="nav-link " href="index.html">Home</a><a class="nav-link " href="services.html">Services</a><a class="nav-link " href="treatments.html">Treatments</a><a class="nav-link active" href="shop.html">Shop <span class="badge">Coming Soon</span></a><a class="nav-link " href="about.html">About</a><a class="nav-link " href="contact.html">Contact</a></nav>
-</header>
-<main><section class="page-hero"><span class="pill">Coming Soon</span><h1>Shop Launching Soon</h1><p>Online shopping is temporarily disabled while the product catalog is prepared.</p></section><section class="section split"><div><h2>Products available during visits</h2><p>Ask about recommended skincare products during your appointment. Checkout and cart features are intentionally disabled.</p></div><a class="btn" href="contact.html">Ask About Products</a></section></main>
-<footer class="site-footer">
-  <div><strong>Skin Restoration Aesthetics</strong><p>Clinical care. Elevated experience.</p></div>
-  <div><a href="legal/privacy.html">Privacy</a> · <a href="legal/terms.html">Terms</a> · <a href="sitemap.xml">Sitemap</a></div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+<body data-page="shop.html">
+  <div id="headerMount"></div>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────────── -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Professional Homecare</p>
+        <h1>Curated skincare, professionally selected</h1>
+        <p class="lead">Every product in our collection is chosen by our skincare professionals to support and extend your treatment results at home.</p>
+      </div>
+    </section>
+
+    <!-- ── COMING SOON ───────────────────────────────────────── -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="coming-soon-wrap" aria-label="Shop coming soon">
+          <span class="beauty-bubble"></span>
+          <span class="beauty-bubble"></span>
+          <span class="beauty-bubble"></span>
+          <span class="beauty-bubble"></span>
+
+          <div class="coming-soon-card">
+            <svg class="spa-character" viewBox="0 0 320 260" role="img" aria-label="Animated skincare face with cucumber eye masks" xmlns="http://www.w3.org/2000/svg">
+              <circle class="spa-sparkle" cx="64" cy="54" r="6" fill="#bca79b"/>
+              <circle class="spa-sparkle" cx="260" cy="72" r="5" fill="#8a6f63"/>
+              <circle class="spa-sparkle" cx="238" cy="28" r="3.5" fill="#bca79b"/>
+              <path d="M74 121c8-53 48-84 89-84s82 31 89 84c6 45-18 91-89 91s-95-46-89-91Z" fill="#f4d6c8" class="spa-face"/>
+              <path d="M88 99c13-49 47-72 75-72s62 23 75 72c-20-21-47-31-75-31s-55 10-75 31Z" fill="#6d5348"/>
+              <ellipse class="spa-cucumber-left" cx="128" cy="124" rx="29" ry="18" fill="#8fbf8b"/>
+              <ellipse class="spa-cucumber-right" cx="198" cy="124" rx="29" ry="18" fill="#8fbf8b"/>
+              <ellipse cx="128" cy="124" rx="18" ry="10" fill="#cfe6c7" opacity=".85"/>
+              <ellipse cx="198" cy="124" rx="18" ry="10" fill="#cfe6c7" opacity=".85"/>
+              <path d="M149 159c9 9 22 9 31 0" stroke="#8a6f63" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M89 174c18 33 47 50 74 50s56-17 74-50" fill="none" stroke="#fff6f1" stroke-width="16" stroke-linecap="round"/>
+              <path d="M70 199c37 31 147 31 184 0" fill="none" stroke="#bca79b" stroke-width="18" stroke-linecap="round"/>
+              <path d="M58 210c43 45 160 45 203 0" fill="none" stroke="#8a6f63" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+            </svg>
+
+            <div class="coming-soon-pill">Shop glow-up in progress</div>
+            <h2 class="coming-soon-title">Coming Soon</h2>
+            <p class="coming-soon-copy">Our skincare shop is getting its beauty sleep. Products are being polished, pampered, and prepped for launch.</p>
+            <p class="coming-soon-joke">Please excuse the glow-up — even websites need a facial sometimes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOMECARE CALLOUT ───────────────────────────────────── -->
+    <section class="section-sm" style="background:var(--surface);border-top:1px solid var(--border);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);align-items:center;">
+          <div>
+            <p class="eyebrow">Why homecare matters</p>
+            <h2 style="font-size:var(--text-2xl);margin-bottom:var(--sp-4);">Your results don't stop at the door</h2>
+            <p class="body-text" style="margin-bottom:var(--sp-4);">Professional treatments lay the foundation. Your daily homecare routine is what maintains, extends, and amplifies those results between visits. Every product we carry is professionally selected — chosen to complement our in-clinic treatments and support your specific skin concerns.</p>
+            <a class="btn btn-primary" href="https://booking.mangomint.com/879442" target="_blank" rel="noopener noreferrer">Book a Consultation</a>
+          </div>
+          <div style="background:linear-gradient(135deg,rgba(188,167,155,0.15),rgba(138,111,99,0.08));border:1px solid var(--border);border-radius:var(--radius-xl);padding:var(--sp-10);text-align:center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.2" style="margin:0 auto var(--sp-4);">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <p style="font-family:var(--font-display);font-size:var(--text-xl);color:var(--text);margin-bottom:var(--sp-2);">Expert Curated</p>
+            <p class="body-text">Every product is selected and recommended by our professional estheticians for quality, results, and skin compatibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="cartMount"></div>
+  <script src="data.js"></script>
+  <script src="utils.js"></script>
+  <script src="checkout.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
