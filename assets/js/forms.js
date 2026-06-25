@@ -1,0 +1,1 @@
+function handleContactPlaceholder(){return false;}

@@ -1,0 +1,1 @@
+function toggleMenu(){document.getElementById("siteNav").classList.toggle("open")}document.documentElement.classList.add("js");

@@ -1,0 +1,20 @@
+{
+  "name": "Skin Restoration Aesthetics",
+  "short_name": "SRA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f2ee",
+  "theme_color": "#8a6f63",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

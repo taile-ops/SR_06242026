@@ -1,0 +1,1 @@
+Hostinger deployment: upload the full contents to public_html, not the outer folder.

@@ -1,0 +1,1 @@
+Check logo, contact info, legal text, booking link, sitemap, mobile menu, and shop coming-soon state.

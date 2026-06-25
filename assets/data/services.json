@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "consultations",
+    "title": "Consultations"
+  },
+  {
+    "slug": "facials",
+    "title": "Facials"
+  },
+  {
+    "slug": "skin-analysis",
+    "title": "Skin Analysis"
+  },
+  {
+    "slug": "maintenance-plans",
+    "title": "Maintenance Plans"
+  },
+  {
+    "slug": "pre-event-care",
+    "title": "Pre Event Care"
+  },
+  {
+    "slug": "post-treatment-support",
+    "title": "Post Treatment Support"
+  },
+  {
+    "slug": "product-guidance",
+    "title": "Product Guidance"
+  },
+  {
+    "slug": "membership-care",
+    "title": "Membership Care"
+  }
+]

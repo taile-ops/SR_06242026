@@ -1,0 +1,1 @@
+GitHub Pages testing instructions. Upload all files to repo root and enable Pages from main branch.

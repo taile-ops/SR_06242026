@@ -1,0 +1,1 @@
+const SHOP_STATUS="coming-soon";

@@ -1,0 +1,1 @@
+function closeMenu(){document.getElementById("siteNav")?.classList.remove("open")}
